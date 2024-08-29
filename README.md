@@ -263,7 +263,10 @@ list.Add(1);
 // list.Add("Two"); // Compile-time error
 ```
 ## 5. Tổng kết
-Generics là một công cụ mạnh mẽ trong C#, giúp viết mã tái sử dụng, bảo trì và hiệu quả hơn. Bằng cách sử dụng Generics, bạn có thể tránh sự lặp lại mã, đảm bảo an toàn kiểu và cải thiện hiệu suất.
+- Tối đa hóa việc tái sử dụng mã: Generic giúp bạn viết mã một cách tổng quát và có thể tái sử dụng cho nhiều trường hợp khác nhau.
+- An toàn về kiểu dữ liệu: Generic đảm bảo rằng kiểu dữ liệu được sử dụng nhất quán, giảm thiểu lỗi do sai kiểu dữ liệu.
+- Hiệu suất cao: Sử dụng Generic giúp cải thiện hiệu suất vì không cần sử dụng kiểu dữ liệu không xác định (như object) và giảm thiểu ép kiểu (type casting).
+- Linh hoạt và dễ bảo trì: Bạn có thể dễ dàng mở rộng và bảo trì mã nguồn khi sử dụng Generic, bởi vì bạn chỉ cần định nghĩa các class, interface, và phương thức một lần.
 ## 6. Nguồn tham khảo
 - https://viblo.asia/p/su-dung-generics-trong-c-924lJDvNKPM
 - https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics
