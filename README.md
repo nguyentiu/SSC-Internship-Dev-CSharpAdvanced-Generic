@@ -130,7 +130,7 @@ class Program
     }
 }
 ```
-Giải thích: Trong ví dụ này, Pair<T, U> là một lớp Generics với hai tham số kiểu, T và U. Lớp Pair này có thể được sử dụng để giữ một cặp bất kỳ hai kiểu dữ liệu nào.
+Giải thích: Trong ví dụ này, `Pair<T, U>` là một lớp Generics với hai tham số kiểu, `T` và `U`. Lớp `Pair` này có thể được sử dụng để giữ một cặp bất kỳ hai kiểu dữ liệu nào.
 
 ### 3.2 Lớp Generics
 Lớp Generics là một lớp được định nghĩa với một hoặc nhiều tham số kiểu. Điều này cho phép lớp hoạt động với bất kỳ kiểu dữ liệu nào trong khi vẫn đảm bảo an toàn về kiểu.
@@ -166,7 +166,7 @@ class Program
     }
 }
 ```
-Giải thích: Lớp Box<T> có thể lưu trữ bất kỳ kiểu dữ liệu nào, làm cho nó có thể tái sử dụng cho các kiểu dữ liệu khác nhau mà không cần viết lại lớp.
+Giải thích: Lớp `Box<T>` có thể lưu trữ bất kỳ kiểu dữ liệu nào, làm cho nó có thể tái sử dụng cho các kiểu dữ liệu khác nhau mà không cần viết lại lớp.
 
 ### 3.3 Giao diện Generics
 Giao diện Generics định nghĩa một hợp đồng mà các lớp thực hiện giao diện phải tuân theo, nhưng với sự linh hoạt khi xác định kiểu dữ liệu khi thực hiện giao diện.
@@ -206,7 +206,7 @@ class Program
     }
 }
 ```
-Giải thích: Giao diện IRepository<T> định nghĩa một hợp đồng Generics cho các lớp repository. Lớp MemoryRepository<T> thực hiện giao diện này, cung cấp một cách linh hoạt để lưu trữ và truy xuất các mục của bất kỳ kiểu dữ liệu nào.
+Giải thích: Giao diện `IRepository<T>` định nghĩa một hợp đồng Generics cho các lớp repository. Lớp `MemoryRepository<T>` thực hiện giao diện này, cung cấp một cách linh hoạt để lưu trữ và truy xuất các mục của bất kỳ kiểu dữ liệu nào.
 
 ### 3.4 Phương thức Generics
 Phương thức Generics là các phương thức có tham số kiểu, làm cho chúng có thể áp dụng cho các kiểu dữ liệu khác nhau mà không cần định nghĩa nhiều phương thức.
@@ -239,14 +239,14 @@ class Program
     }
 }
 ```
-Giải thích: Phương thức Swap<T> có thể hoán đổi giá trị của bất kỳ kiểu dữ liệu nào, làm cho nó trở thành một phương thức tiện ích linh hoạt.
+Giải thích: Phương thức `Swap<T>` có thể hoán đổi giá trị của bất kỳ kiểu dữ liệu nào, làm cho nó trở thành một phương thức tiện ích linh hoạt.
 
 ## 4. So sánh Generics và Non-Generics
 Để làm nổi bật lợi ích của việc sử dụng Generics, hãy so sánh chúng với các giải pháp không sử dụng Generics:
 
 - Tái sử dụng mã: Không có Generics, bạn cần tạo nhiều lớp hoặc phương thức cho các kiểu dữ liệu khác nhau. Với Generics, bạn có thể định nghĩa một lớp hoặc phương thức duy nhất hoạt động cho mọi kiểu, giảm bớt sự trùng lặp mã.
 
-- An toàn kiểu dữ liệu: Các collection không sử dụng Generics, như ArrayList, lưu trữ các phần tử dưới dạng object, có thể dẫn đến lỗi thời gian chạy nếu bạn cố gắng ép kiểu sai. Generics đảm bảo an toàn kiểu dữ liệu tại thời gian biên dịch, ngăn chặn các lỗi như vậy.
+- An toàn kiểu dữ liệu: Các collection không sử dụng Generics, như `ArrayList`, lưu trữ các phần tử dưới dạng `object`, có thể dẫn đến lỗi thời gian chạy nếu bạn cố gắng ép kiểu sai. Generics đảm bảo an toàn kiểu dữ liệu tại thời gian biên dịch, ngăn chặn các lỗi như vậy.
 
 - Hiệu suất: Các collection không sử dụng Generics yêu cầu boxing và unboxing cho các kiểu giá trị, điều này có thể làm giảm hiệu suất. Generics tránh điều này bằng cách làm việc trực tiếp với các kiểu dữ liệu cụ thể.
 
@@ -262,6 +262,8 @@ List<int> list = new List<int>();
 list.Add(1);
 // list.Add("Two"); // Compile-time error
 ```
-## 5. Nguồn tham khảo
+## 5. Tổng kết
+Generics là một công cụ mạnh mẽ trong C#, giúp viết mã tái sử dụng, bảo trì và hiệu quả hơn. Bằng cách sử dụng Generics, bạn có thể tránh sự lặp lại mã, đảm bảo an toàn kiểu và cải thiện hiệu suất.
+## 6. Nguồn tham khảo
 - https://viblo.asia/p/su-dung-generics-trong-c-924lJDvNKPM
 - https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics
